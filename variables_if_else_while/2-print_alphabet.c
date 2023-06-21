@@ -9,7 +9,8 @@
 int main(void)
 {
 char abcdario;
-for (abcdario = 'a'; abcdario <= 'z'; abcdario++){
+for (abcdario = 'a'; abcdario <= 'z'; abcdario++)
+{
 putchar(abcdario);
 }
 putchar('\n');
