@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - Prints the entry alphabet.
-*description: The alphabet a to z
-*return: zero
+* main - Prints the entry alphabet.
+* description: The alphabet a to z
+* return: zero
 */
 int main(void)
 {
