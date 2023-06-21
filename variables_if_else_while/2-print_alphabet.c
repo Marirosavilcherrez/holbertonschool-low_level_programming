@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - Entry point void
+*main: Entry point void
 *description: The alphabet a to z
 *return: zero
 */
