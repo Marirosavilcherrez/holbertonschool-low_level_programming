@@ -6,6 +6,7 @@
 /**
 *main -  give as a random number
 *there are 3 options: more than 5, less than 6 and equal to 0
+*return: 0
 */
 int main(void)
 {
