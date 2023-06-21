@@ -8,10 +8,10 @@
 */
 int main(void)
 {
-	char abcdario;
-	for (abcdario = 'a'; abcdario <= 'z'; abcdario++){
-		putchar(abcdario);
-	}
-	putchar('\n');
-	return (0);
+char abcdario;
+for (abcdario = 'a'; abcdario <= 'z'; abcdario++){
+putchar(abcdario);
+}
+putchar('\n');
+return (0);
 }
