@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*I call the alphabet game*/
-
 /**
-*main - print the alphabet in lowercase
+*main - Entry point
+*description: The alphabet a to z
+*return: zero
 */
 int main(void)
 {
