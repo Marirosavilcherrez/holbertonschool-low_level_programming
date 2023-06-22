@@ -12,8 +12,8 @@ char letter;
 for (letter = 'a'; letter <= 'z'; letter++)
 {
 if (letter == 99)
-putchar(49);
+_putchar(49);
 else
-putchar(48);
+_putchar(48);
 }
 }
