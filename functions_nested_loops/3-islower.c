@@ -6,7 +6,7 @@
 * Description:  Funtion to print the lowercase
 *
 */
-int _islower(int c);
+int _islower(int c)
 {
 int c;
 if (c == (islower))
