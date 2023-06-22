@@ -1,14 +1,20 @@
-#include <unistd.h>
-#include "main.h"
-/**/int main(void)
+#include <stdlib.h>
+#include <stdio.h>
+/**
+* main - Prints _putchar
+*
+* Return: Always 0.
+*/
+int main(void)
 {
-int str[] = {95, 112, 117, 116, 99, 104, 97, 114};
-int count, sz;
-sz = sizeof(str) / sizeof(int);
-for (count = 0; count < sz; count++)
-{
-_putchar(str[count]);
-}
-_putchar('\n');
+putchar(95);
+putchar(112);
+putchar(117);
+putchar(116);
+putchar(99);
+putchar(104);
+putchar(97);
+putchar(114);
+putchar('\n');
 return (0);
 }
