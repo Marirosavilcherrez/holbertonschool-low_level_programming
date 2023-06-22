@@ -6,7 +6,7 @@
 * Description:  Funtion to print lowercase and upper
 *
 */
-int _islower(int c)
+int _isalpha(int c)
 {
 char letter;
 int num = 0;
