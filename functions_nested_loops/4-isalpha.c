@@ -16,6 +16,8 @@ if (letter == c)
 num = 1;
 }
 for (letter = 'A'; letter <= 'Z'; letter++)
+{
+if (letter == c)
 num = 1;
 }
 return (num);
