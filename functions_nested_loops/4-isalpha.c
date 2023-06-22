@@ -6,11 +6,17 @@
 * Description:  Funtion to print lowercase and upper
 *
 */
-int _isalpha(int c)
+int _islower(int c);
 {
-	if ((c >= 'a' && c <= 'z') ||
-	    (c >= 'A' && c <= 'Z'))
-		return (1);
-	else
-		return (0);
+char letter;
+int num = 0;
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+if (letter == c)
+num = 1;
+}
+for (letter = 'A'; letter <= 'Z'; letter++)
+num = 1;
+}
+return (num);
 }
