@@ -10,10 +10,8 @@ int _islower(int c)
 {
 char letter;
 for (letter = 'a'; letter <= 'z'; letter++)
-{
 if (letter == c)
 _putchar(49);
 else
 _putchar(48);
-}
 }
