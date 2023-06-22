@@ -13,7 +13,7 @@ int num = 0;
 for (letter = 'a'; letter <= 'z'; letter++)
 {
 if (letter == c)
-num =1;
+num = 1;
 }
 return (num);
 }
