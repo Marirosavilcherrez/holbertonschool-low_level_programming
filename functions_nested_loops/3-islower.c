@@ -8,8 +8,12 @@
 */
 int _islower(int c)
 {
-if (c >= 97 && c <= 122)
-_putchar(49);
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+if (letter == 99)
+putchar(49);
 else
-_putchar(48);
+putchar(48);
+}
 }
