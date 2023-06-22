@@ -10,8 +10,8 @@ int _islower(int c);
 {
 int c;
 if (c == (islower))
-_putchar('49';
+_putchar(49);
 else
-_putchar('48');
+_putchar(48);
 _putchar('\n');
 }
