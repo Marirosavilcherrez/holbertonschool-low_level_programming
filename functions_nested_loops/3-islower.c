@@ -6,10 +6,14 @@
 * Description:  Funtion to print the lowercase
 *
 */
+{
 int _islower(int c)
 char letter;
+int num = 0;
 for (letter = 'a'; letter <= 'z'; letter++)
+{
 if (letter == c)
-_putchar(49);
-else
-_putchar(48);
+num =1;
+}
+return (num);
+}
