@@ -12,5 +12,4 @@ if (c >= 'a' && c <= 'z')
 _putchar(49);
 else
 _putchar(48);
-_putchar('\n');
 }
