@@ -10,5 +10,5 @@ char abcdario;
 for (abcdario = 'a'; abcdario <= 'z'; abcdario++)
 {
 _putchar(abcdario);
-return (0);
+_putchar(\n);
 }
