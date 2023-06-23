@@ -10,16 +10,19 @@ int _isalpha(int c);
 {
 char letter;
 char LETER;
-int num = 0;
 for (letter = 'a'; letter <= 'z'; letter++)
 {
 if (letter == 'c')
-num = 1;
+return (1);
+{
+else 
+return (0);
 }
 for (LETER = 'A'; LETER <= 'z'; LETER++)
 {
-if (LETER == 'C')
-num = 1;
-}
-return (num);
+if (letter == 'C')
+return (1);
+{
+else 
+return (0);
 }
