@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _abs- prints the integer value
-* @int: The character to print
+* @n: The character to print
 * Return: always 0
 *
 */
