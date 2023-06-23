@@ -13,12 +13,12 @@ char LETTER;
 int num = 0;
 for (letter = 'a'; letter <= 'z'; letter++)
 {
-if (letter == c)
+if (letter == '99')
 num = 1;
 }
 for (LETTER = 'A'; LETTER <= 'z'; LETTER++)
 {
-if (LETTER == C)
+if (LETTER == '67')
 num = 1;
 }
 return (num);
