@@ -18,7 +18,7 @@ num = 1;
 }
 for (LETTER = 'A'; LETTER <= 'z'; LETTER++)
 {
-if (LETTER == c)
+if (LETTER == C)
 num = 1;
 }
 return (num);
