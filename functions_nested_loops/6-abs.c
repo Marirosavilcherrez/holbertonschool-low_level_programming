@@ -5,7 +5,7 @@
 * Return: always 0
 *
 */
-int _abs(int)
+int _abs(int n)
 {
 if (n >= 0)
 {
