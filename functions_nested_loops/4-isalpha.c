@@ -8,9 +8,18 @@
 */
 int _islower(int c);
 {
-if ((c >= 'a' && c <= 'z') ||
-(c >= 'A' && c <= 'Z'))
-return (1);
-else
-return (0);
+char letter;
+char LETTER;
+int num = 0;
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+if (letter == c)
+num = 1;
+}
+for (LETTER = 'A'; LETTER <= 'z'; LETTER++)
+{
+if (LETTER == c)
+num = 1;
+}
+return (num);
 }
