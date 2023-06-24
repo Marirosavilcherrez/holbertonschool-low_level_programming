@@ -6,23 +6,14 @@
 * Description:  Funtion to print lowercase and upper
 *
 */
-int _isalpha(int c);
+int _isalpha(int c)
 {
-char letter;
-char LETER;
-for (letter = 'a'; letter <= 'z'; letter++)
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 {
-if (letter == 'c')
 return (1);
-{
+}
 else 
+{
 return (0);
 }
-for (LETER = 'A'; LETER <= 'z'; LETER++)
-{
-if (letter == 'C')
-return (1);
-{
-else 
-return (0);
 }
