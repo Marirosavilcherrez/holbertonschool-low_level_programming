@@ -6,7 +6,7 @@
 * Description:  Funtion to print 
 *
 */
-void print_diagonal(int n)
+void print_diagonal(int n);
 {
 int filas;
 int columnas;
