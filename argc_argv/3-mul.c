@@ -9,12 +9,18 @@
  * Return: Always 0 (Success)
  * Description - Program that multiplies two numbers
  **/
-int main(__attribute__((unused)) int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a;
 	int b;
 	int result;
 
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+
+	}
 	a = atoi(argv[1]);
 	b = atoi(argv[2]);
 
