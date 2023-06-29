@@ -12,7 +12,7 @@ int firstdig;
 int secdig;
 for (firstdig = '0'; firstdig <= '8'; firstdig++)
 {
-	for (secdig = '1'; secdig <= '9'; secdig++)
+	for (secdig = firstdig + 1; secdig <= '9'; secdig++)
 	{
 		if (firstdig != secdig)
 		{
