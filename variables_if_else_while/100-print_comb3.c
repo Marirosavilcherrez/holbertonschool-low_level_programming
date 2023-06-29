@@ -18,11 +18,14 @@ if (num1 != num2 && num1 < num2)
 {
 putchar(num1 + '0');
 putchar(num2 + '0');
+}
+if(!(firstdig =='8' && secdig =='9'))
+{
 putchar(',');
 putchar(' ');
 }
 }
 }
 putchar('\n');
-return 0;
+return (0);
 }
