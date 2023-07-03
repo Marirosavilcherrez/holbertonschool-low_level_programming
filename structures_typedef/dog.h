@@ -1,14 +1,18 @@
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 /**
-* struct - prints
-* @dog : The name of the structure
-* Return: always 0
-* Description:  Funtion to print elements
-*
-*/
+ * struct dog - Short description
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
+ *
+ * Description: Define a new type with the following elements
+ */
 struct dog
 {
 char *name;
 float age;
 char *owner;
-}type;
+};
+
+#endif
