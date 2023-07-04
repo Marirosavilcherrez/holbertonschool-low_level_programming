@@ -18,36 +18,26 @@ char *puppyname, *puppyowner;
 int longname = 0, longowner = 0, aray;
 
 if (name == NULL || owner == NULL)
-	return (NULL);
+return (NULL);
 while (name[longname])
-	longname++;
+longname++;
 while (owner[longowner])
-	longowner++;
+longowner++;
 my_puppy = malloc(sizeof(dog_t));
 if (my_puppy == NULL)
-{
-	return (NULL);
-}
+return (NULL);
 puppyname = malloc(longname + 1);
 if (puppyname == NULL)
-{
-	return (NULL);
-}
+return (NULL);
 for (aray = 0; name[aray]; aray++)
-{
-	puppyname[aray] = name[aray];
-	puppyname[aray] = '\0';
-}
+puppyname[aray] = name[aray];
+puppyname[aray] = '\0';
 puppyowner = malloc(longowner + 1);
 if (puppyowner == NULL)
-{
-	return (NULL);
-}
+return (NULL);
 for (aray = 0; owner[aray]; aray++)
-{
-	puppyowner[aray] = owner[aray];
-	puppyowner[aray] = '\0';
-}
+puppyowner[aray] = owner[aray];
+puppyowner[aray] = '\0';
 my_puppy->name = puppyname;
 my_puppy->age = age;
 my_puppy->owner = puppyowner;
