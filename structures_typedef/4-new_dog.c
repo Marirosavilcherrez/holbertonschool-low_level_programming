@@ -3,10 +3,11 @@
 #include <string.h>
 #include "dog.h"
 /**
- * new_dog - Pointer
+ * new_dog - New function
  * @name: First member
  * @age: Second member
  * @owner: Third member
+ * Return: Always 0.
  *
  * Description: Write a function that creates a new dog
  */
@@ -32,7 +33,7 @@ if (puppyname == NULL)
 {
 	return (NULL);
 }
-for (aray = 0; puppyname[aray]; aray++)
+for (aray = 0; name[aray]; aray++)
 {
 	puppyname[aray] = name[aray];
 	puppyname[aray] = '\0';
@@ -42,7 +43,7 @@ if (puppyowner == NULL)
 {
 	return (NULL);
 }
-for (aray = 0; puppyowner[aray]; aray++)
+for (aray = 0; owner[aray]; aray++)
 {
 	puppyowner[aray] = owner[aray];
 	puppyowner[aray] = '\0';
