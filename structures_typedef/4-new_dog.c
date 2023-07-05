@@ -13,33 +13,42 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *my_puppy;
-char *puppyname, *puppyowner;
-int longname = 0, longowner = 0, aray;
+	dog_t *new_dog;
+	int z, lname, lowner;
 
-if (name == NULL || owner == NULL)
-return (NULL);
-while (name[longname])
-longname++;
-while (owner[longowner])
-longowner++;
-my_puppy = malloc(sizeof(dog_t));
-if (my_puppy == NULL)
-return (NULL);
-puppyname = malloc(longname + 1);
-if (puppyname == NULL)
-return (NULL);
-for (aray = 0; name[aray]; aray++)
-puppyname[aray] = name[aray];
-puppyname[aray] = '\0';
-puppyowner = malloc(longowner + 1);
-if (puppyowner == NULL)
-return (NULL);
-for (aray = 0; owner[aray]; aray++)
-puppyowner[aray] = owner[aray];
-puppyowner[aray] = '\0';
-my_puppy->name = puppyname;
-my_puppy->age = age;
-my_puppy->owner = puppyowner;
-return (my_puppy);
+	new_dog = malloc(sizeof(*new_dog));
+	if (new_dog == NULL || !(name) || !(owner))
+	{
+		free(new_dog);
+		return (NULL);
+	}
+
+	for (lname = 0; name[lname]; lname++)
+		;
+
+	for (lowner = 0; owner[lowner]; lowner++)
+		;
+
+	new_dog->name = malloc(lname + 1);
+	new_dog->owner = malloc(lowner + 1);
+
+	if (!(new_dog->name) || !(new_dog->owner))
+	{
+		free(new_dog->owner);
+		free(new_dog->name);
+		free(new_dog);
+		return (NULL);
+	}
+
+	for (z = 0; z < lname; z++)
+		new_dog->name[z] = name[z];
+	new_dog->name[z] = '\0';
+
+	new_dog->age = age;
+
+	for (z = 0; z < lowner; z++)
+		new_dog->owner[z] = owner[z];
+	new_dog->owner[z] = '\0';
+
+	return (new_dog);
 }
