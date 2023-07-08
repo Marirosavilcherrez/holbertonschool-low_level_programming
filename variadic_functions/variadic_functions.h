@@ -1,9 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 /**
- * print_name - Function
- * @name: First member
- * @f: Second member
+ * sum_the_all - Function sum
+ * @n: Second member
+ * Return: Always 0.
  *
  * Description: A function that prints a name
  */
